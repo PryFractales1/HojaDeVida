@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Contactos - Erick Cruz</title>
+	<meta name="keywords" content="contactos" />
+	<meta name="description" content="Contactos - Alex Vinueza" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157184108-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157184108-1');
+</script>
+	<script type="text/javascript" src="resources/main.js"></script>
+</head>
+<body>
+<form method="post" action="index.html" id="formulario" name="formulario" >
+	<fieldset>
+		<legend>Contactos</legend><br>
+		<h3>Estamos para servirle, despeje todas sus inquietudes.</h3>
+
+		<label for="nombre">
+			<p>Tu Nombre:</p>
+			<input type="text" name="nombre"  tabindex="1" accesskey="n" id="nombre" />
+		</label><br>
+		<label for="email">
+			<p>Tu Email:</p>
+			<input type="email" name="email" tabindex="2" accesskey="e" id="email" />
+		</label><br>
+		<label for="telefono">
+			<p>Tu Telefono:</p>
+			<input type="tel" name="telefono" tabindex="3" accesskey="t" id="telefono" />
+		</label><br>
+
+		<label for="consulta">
+			<p>Motivo de la consulta:</p>
+			<select value="0" name="consulta" id="consulta">
+				<optgroup label="Sistemas Informaticos">
+					<option value="Desarrollo Web">Desarrollo web</option>
+					<option value="Consultoria de TIC">Consultoria de TIC</option>
+				</optgroup>
+					
+			</select>
+		</label>
+		<label for="mensaje">
+			<p>Tu Mensaje:</p>
+			<textarea id="mensaje" name="mensaje"></textarea>
+		</label><br>
+		<input name="Enviar" value="Enviar" type="submit" id="EnviarMensaje" onclick="pregunta()" />
+		<p></p>
+	</fieldset>
+</form>
+</body>
+</html>
